@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zapraszam na serwer OPOROWCÓW</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom, #3a5f0b, #1a1a1a);
+    overflow-x: hidden;
+}
+
+/* Animacja fade in całej strony */
+body {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+header {
+    padding: 30px;
+    font-size: 32px;
+    background: rgba(0,0,0,0.6);
+    animation: slideDown 1.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {transform: translateY(-100px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.box {
+    margin: 60px auto;
+    padding: 30px;
+    width: 380px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,255,0,0.6);
+    animation: popUp 1.5s ease-out;
+}
+
+@keyframes popUp {
+    from {transform: scale(0.5); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+a {
+    color: #7CFC00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img {
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: transform 0.4s;
+}
+
+img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Animowany przycisk */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #2e8b57;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3cb371;
+    transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+🚜 Zapraszam na serwer OPOROWCÓW 🌾
+</header>
+
+<div class="box">
+    <h2>Zeskanuj kod QR</h2>
+    <p>Albo kliknij link:</p>
+
+    <a href=https://discord.gg/dNyNhN7V target="_blank">
+        https://discord.gg/RETXWmde
+    </a>
+
+    <br>
+
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://discord.gg/dNyNhN7V alt="QR Code">
+
+    <br>
+
+    <button onclick="alert('Widzimy się na serwerze 🚜🔥')">
+        Dołącz teraz
+    </button>
+</div>
+
+</body>
+</html>
